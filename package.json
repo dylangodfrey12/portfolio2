@@ -27,6 +27,9 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "start": "gulp"
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
   }
 }
