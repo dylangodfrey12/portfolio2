@@ -1,0 +1,92 @@
+$primary-font: 'Open Sans', sans-serif;
+$mobile-font-scale: 1.2rem;
+$tablet-font-scale: 1.4rem;
+$desktop-font-scale: 1.6rem;
+
+$white: #FFF;
+$clouds: #ECF0F1;
+$silver: #BDC3C7;
+$concrete: #95A5A6;
+$asbestos: #7F8C8D;
+$alizarin: #E74C3C;
+$pomegranate: #C0392B;
+$carrot: #E67E22;
+$pumpkin: #D35400;
+$sun-flower: #F1C40F;
+$orange: #F39C12;
+$emerald: #2ECC71;
+$nephritis: #27AE60;
+$peter-river: #3498DB;
+$belize-hole: #2980B9;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$amethyst: #9B59B6;
+$wisteria: #8E44AD;
+$slate: #333;
+
+$primary-color: $belize-hole;
+$secondary-color: $clouds;
+
+
+//colors
+$color-primary: #95A5A6;
+$color-primary-light: #95A5A6;
+$color-primary-dark: #2980B9;
+$color-grey-light-1: #f7f7f7;
+
+$color-secondary-light: #95A5A6;
+$color-secondary-dark: #2980B9;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: rgb(61, 60, 60);
+$color-grey-dark-3: rgb(43, 42, 42);
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-dark-2: #999;
+//grid vars
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 1rem;
+
+//font
+$default-font-size: 1.6rem;
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+@mixin clearfix {
+  &::after {
+      //must have content and table is standard
+      content:"";
+      display: table;
+      clear: both;
+  }
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $mobile-font-scale;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+iframe {
+  border: none;
+}
+
+@import 'partials/mixins.scss';
+@import 'partials/buttons.scss';
+@import 'partials/header.scss';
+@import 'partials/sections.scss';
+@import 'partials/projects.scss';
+@import 'partials/writing.scss';
+@import 'partials/footer.scss';
+@import 'partials/grid.scss';
+@import 'partials/home.scss';
